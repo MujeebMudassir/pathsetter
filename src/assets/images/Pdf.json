@@ -1,0 +1,180 @@
+{
+    "page_0": "Global outlook",
+    "data_0": {
+      "left_key_1":"US$3.2trn",
+      "left_key_2":"Market Size 2023",
+      "left_key_3":"US$5.4trn",
+      "left_key_4":"Projected Market Size 2030",
+      "left_key_5":"19.2%",
+      "left_key_6":"Industry CAGR",
+      "left_key_7":"5-10%",
+      "left_key_8":"Boost from GenAI",
+      "right_key_1":"McDonald’s",
+      "right_key_2":"Starbucks",
+      "right_key_3":"KFC"
+    },
+    "page_1": "India outlook",
+    "data_1": {
+      "left_key_1":"US$46bn",
+      "left_key_2":"2023 Market Size",
+      "left_key_3":"US$94bn",
+      "left_key_4":"2030E Projected Market Size",
+      "left_key_5":"10.7%",
+      "left_key_6":"Industry CAGR",
+      "left_key_7":"3-7%",
+      "left_key_8":"Boost from GenAI",
+      "right_key_1":"Saravana Bhavan",
+      "right_key_2":"Third Wave Coffee",
+      "right_key_3":"Haldiram’s"
+    },
+    "page_2": "Job Roles",
+    "table":{
+        "Colum_1":"Role",
+        "Colum_2":"Tasks",
+        "Colum_3":"Tasks That Can Be Augmented By GenAI"
+    },
+    "data_2": [
+      {
+        "name": "Area Manager",
+        "data": ["Performance Monitoring", "Compliance and Standards", "Resource Allocation"],
+        "value": "65%"
+      },
+      {
+        "name": "General Manager",
+        "data": ["Operational Oversight", "Financial Management", "Strategic Planning"],
+        "value": "68%"
+      },
+      {
+        "name": "QSR Associate",
+        "data": ["Order Processing", "Payment Handling", "Customer Interaction"],
+        "value": "80%"
+      },
+      {
+        "name": "Restaurant Manager",
+        "data": ["Staff Scheduling", "Customer Service Management", "Inventory Control"],
+        "value": "70%"
+      },
+      {
+        "name": "Cashier",
+        "data": ["Payment Processing", "Transaction Logging", "Cash Management"],
+        "value": "85%"
+      },
+      {
+        "name": "Cook",
+        "data": ["Meal Preparation", "Inventory Usage", "Quality Control"],
+        "value": "50%"
+      },
+      {
+        "name": "Server",
+        "data": ["Order Delivery", "Table Management", "Customer Feedback Collection"],
+        "value": "55%"
+      }
+    ],
+    "page_3": "Return on Investment",
+    "data_3": {
+      "Description": "For an average QSR restaurant chain consisting of five restaurants (with $1 million sales per restaurant), a full value chain Gen AI transformation could cost around $200,000 to $500,000.",
+      "graph_1_key_1":"$1m",
+      "graph_1_key_2":"Revenue before GenAI",
+      "graph_1_key_3":"$1.3m",
+      "graph_1_key_4":"Revenue after GenAI",
+      "graph_1_value":"Potential increase of $100K-300K",
+      "graph_2_key_1":"$900K",
+      "graph_2_key_2":"Costs before GenAI",
+      "graph_2_key_3":"$200K",
+      "graph_2_key_4":"Costs after GenAI",
+      "graph_2_value":"Potential cost savings up to $500K-$700K"
+    },
+    "page_4": "Value Chain",
+    "data_4": {
+        "Data_4_key_1": {
+            "headLine": "Primary Activities",
+            "key_1": "Inbound Logistics",
+            "icon_1": "",
+            "popup_value_1":["Supplier Management", "Inventory Managemen", "Quality Control","Vendor Relationships"],
+            "key_2": "Company Operations",
+            "icon_2": "",
+            "popup_value_2":["Supplier Management", "Inventory Managemen", "Quality Control","Vendor Relationships"],
+            "key_3": "Outbound Logistics",
+            "icon_3": "",
+            "popup_value_3":["Supplier Management", "Inventory Managemen", "Quality Control","Vendor Relationships"],
+            "key_4": "Sales & Marketing",
+            "icon_4": "",
+            "popup_value_4":["Supplier Management", "Inventory Managemen", "Quality Control","Vendor Relationships"],
+            "key_5": "Customer Service",
+            "icon_5": "",
+            "popup_value_5":["Supplier Management", "Inventory Managemen", "Quality Control","Vendor Relationships"]
+        },
+        "Data_4_key_2": {
+            "headLine": "Support Activities",
+            "key_1": "Firm Infrastructure",
+            "icon_1": "",
+            "popup_value_1":["Supplier Management", "Inventory Managemen", "Quality Control","Vendor Relationships"],
+            "key_2": "HR Management",
+            "icon_2": "",
+            "popup_value_2":["Supplier Management", "Inventory Managemen", "Quality Control","Vendor Relationships"],
+            "key_3": "Technology Development",
+            "icon_3": "",
+            "popup_value_3":["Supplier Management", "Inventory Managemen", "Quality Control","Vendor Relationships"],
+            "key_4": "Procurement Activities",
+            "icon_4": "",
+            "popup_value_4":["Supplier Management", "Inventory Managemen", "Quality Control","Vendor Relationships"]
+        }
+    },
+    "page_5": "AI Solutions",
+    "data_5": [
+        {
+            "headLine": "Inbound Logistics",
+            "sub_head": "GenAI Solution Recommender",
+            "description": "Stages which can be impacted"
+        },
+        {
+            "headLine": "Company Operations",
+            "sub_head": "GenAI Solution Recommender",
+            "description": "Stages which can be impacted"
+        },
+        {
+            "headLine": "Outbound Logistics",
+            "sub_head": "GenAI Solution Recommender",
+            "description": "Stages which can be impacted"
+        },
+        {
+            "headLine": "Sales & Marketing",
+            "sub_head": "GenAI Solution Recommender",
+            "description": "Stages which can be impacted"
+        },
+        {
+            "headLine": "Customer Service",
+            "sub_head": "GenAI Solution Recommender",
+            "description": "Stages which can be impacted"
+        }
+    ],
+    "page_6": "Risk Matrix",
+    "data_6": [
+        {
+            "headLine": "Gen Automation",
+            "sub_head": "Workflow automation ",
+            "description": "Workflow automation AI systems that automate routine tasks, such as inventory checks, order processing, and data entry, across various platforms and applications"
+        },
+        {
+            "headLine": "Inventory AI",
+            "sub_head": "Workflow automation ",
+            "description": "Workflow automation AI systems that automate routine tasks, such as inventory checks, order processing, and data entry, across various platforms and applications"
+        },
+        {
+            "headLine": "Customer AI",
+            "sub_head": "Workflow automation ",
+            "description": "Workflow automation AI systems that automate routine tasks, such as inventory checks, order processing, and data entry, across various platforms and applications"
+        },
+        {
+            "headLine": "Marketing AI",
+            "sub_head": "Workflow automation ",
+            "description": "Workflow automation AI systems that automate routine tasks, such as inventory checks, order processing, and data entry, across various platforms and applications"
+        },
+        {
+            "headLine": "In sighting AI",
+            "sub_head": "Workflow automation ",
+            "description": "Workflow automation AI systems that automate routine tasks, such as inventory checks, order processing, and data entry, across various platforms and applications"
+        }
+    ]
+  }
+  

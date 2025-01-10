@@ -1,0 +1,205 @@
+@keyframes track-left-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.track-left-in {
+  animation: track-left-in 1s ease-out forwards;
+}
+@keyframes track-right-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.track-right-in {
+  animation: track-right-in 1s ease-out forwards;
+}
+
+.track-radial-gradient {
+  background: rgb(255, 255, 255);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(148, 187, 233, 0) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(148, 187, 233, 0) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(71, 9, 119, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#94bbe9",GradientType=1);
+}
+.track-gradient {
+  background: rgb(153, 20, 255);
+  background: -moz-linear-gradient(
+    150deg,
+    rgba(153, 20, 255, 0) 85%,
+    rgba(168, 65, 242, 0.544) 100%
+  );
+  background: -webkit-linear-gradient(
+    150deg,
+    rgba(153, 20, 255, 0) 85%,
+    rgba(163, 47, 205, 0.544) 100%
+  );
+  background: linear-gradient(
+    140deg,
+    rgba(153, 20, 255, 0) 90%,
+    rgba(255, 255, 255, 0.084) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9914ff",endColorstr="#ffffff",GradientType=1);
+}
+
+.gradient-text {
+  background-size: 300% 300%;
+  animation: gradientAnimation 3s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.fancy {
+  --offset: 3px;
+  /* background: rgb(55, 21, 90); */
+  border-radius: 10px;
+  position: relative;
+  /* height: 75px; */
+  /* width: 400px; */
+  max-width: 100%;
+  padding: 2px;
+  /* z-index: -2; */
+  overflow: hidden;
+}
+
+/* Conic gradient */
+.fancy::before {
+  content: "";
+  background: conic-gradient(transparent 330deg, white, transparent);
+  /* background: linear-gradient(180deg, rgba(126, 34, 206, 0) 0%, rgba(126, 34, 206, 0.697917) 9%, rgba(126, 34, 206, 0.760417) 50%, rgba(126, 34, 206, 0.760417) 66.6667%, rgba(126, 34, 206, 0) 100%); */
+
+
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate 4s linear infinite;
+  animation-delay:1s ;
+  opacity: 0;
+}
+
+/* Overlay */
+.fancy::after {
+  content: "";
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+.fancy > div {
+  background-color: #03091d;
+}
+
+@keyframes rotate {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+
+/* outer fancy  */
+.outer-fancy {
+  --offset: 3px;
+  /* background: rgb(55, 21, 90); */
+  border-radius: 10px;
+  position: relative;
+  /* height: 75px; */
+  /* width: 400px; */
+  max-width: 100%;
+  padding: 2px;
+  /* z-index: -2; */
+  overflow: hidden;
+}
+
+/* Conic gradient */
+.outer-fancy::before {
+  content: "";
+  /* background: linear-gradient(180deg, rgba(49, 91, 230, 0) 0%, rgba(49, 91, 230, 0.697917) 9%, rgba(49, 91, 230, 0.760417) 50%, rgba(49, 91, 230, 0.760417) 66.6667%, rgba(49, 91, 230, 0) 100%); */
+  background: conic-gradient(transparent 330deg,var(--dynamic-color, white), transparent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 200%;
+  animation: outer-rotate 4s linear infinite;
+  animation-delay:1s ;
+  opacity: 0;
+}
+
+/* Overlay */
+.outer-fancy::after {
+  content: "";
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+.outer-fancy > div {
+  /* background-color: #03091d; */
+}
+
+@keyframes outer-rotate {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+@media screen and  (max-width: 768px) {
+  .outer-fancy::before{
+    width: 350%;
+  }
+}

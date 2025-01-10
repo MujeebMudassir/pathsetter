@@ -1,0 +1,133 @@
+.product:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.product:hover:after { 
+    width: 100%; 
+    left: 0;
+  }
+
+  .fancy {
+    --offset: 3px;
+    /* background: rgb(55, 21, 90); */
+    border-radius: 10px;
+    position: relative;
+    /* height: 75px; */
+    /* width: 400px; */
+    max-width: 100%;
+    padding: 2px;
+    /* z-index: -2; */
+    overflow: hidden;
+  }
+  
+  /* Conic gradient */
+  .fancy::before {
+    content: "";
+    background: conic-gradient(transparent 330deg, white, transparent);
+    /* background: linear-gradient(180deg, rgba(126, 34, 206, 0) 0%, rgba(126, 34, 206, 0.697917) 9%, rgba(126, 34, 206, 0.760417) 50%, rgba(126, 34, 206, 0.760417) 66.6667%, rgba(126, 34, 206, 0) 100%); */
+  
+  
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1;
+    width: 100%;
+    animation: rotate 4s linear infinite;
+    animation-delay:1s ;
+    opacity: 0;
+  }
+  
+  /* Overlay */
+  .fancy::after {
+    content: "";
+    background: inherit;
+    border-radius: inherit;
+    position: absolute;
+    inset: var(--offset);
+    height: calc(100% - 2 * var(--offset));
+    width: calc(100% - 2 * var(--offset));
+  }
+  
+  .fancy > div {
+    background-color: #03091d;
+  }
+  
+  @keyframes rotate {
+    from {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+    }
+  }
+  
+  /* outer fancy  */
+  .outer-fancy {
+    --offset: 3px;
+    /* background: rgb(55, 21, 90); */
+    border-radius: 10px;
+    position: relative;
+    /* height: 75px; */
+    /* width: 400px; */
+    max-width: 100%;
+    padding: 2px;
+    /* z-index: -2; */
+    overflow: hidden;
+  }
+  
+  /* Conic gradient */
+  .outer-fancy::before {
+    content: "";
+    /* background: linear-gradient(180deg, rgba(49, 91, 230, 0) 0%, rgba(49, 91, 230, 0.697917) 9%, rgba(49, 91, 230, 0.760417) 50%, rgba(49, 91, 230, 0.760417) 66.6667%, rgba(49, 91, 230, 0) 100%); */
+    background: conic-gradient(transparent 330deg, white, transparent);
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1;
+    width: 100%;
+    animation: outer-rotate 4s linear infinite;
+    animation-delay:1s ;
+    opacity: 0;
+  }
+  
+  /* Overlay */
+  .outer-fancy::after {
+    content: "";
+    background: inherit;
+    border-radius: inherit;
+    position: absolute;
+    inset: var(--offset);
+    height: calc(100% - 2 * var(--offset));
+    width: calc(100% - 2 * var(--offset));
+  }
+  
+  .outer-fancy > div {
+    background-color: #03091d;
+  }
+  
+  @keyframes outer-rotate {
+    from {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+    }
+  }

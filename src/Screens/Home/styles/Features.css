@@ -1,0 +1,205 @@
+
+
+  @keyframes track-right-in {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .track-right-in {
+    animation: track-right-in 1s ease-out forwards;
+  }
+  
+
+  .scale-0 {
+    transform: scale(0);
+  }
+  
+  .scale-100 {
+    transform: scale(1);
+  }
+
+  .custom-grid-cols {
+    grid-template-columns: 1fr 3fr;
+    background-color: antiquewhite;
+  }
+
+  /* box border animations  */
+  .feature-glass {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: all 500ms ease-in-out;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .feature-glass:hover {
+    box-shadow: 0 2px 12px 0 rgba(129, 131, 152, 0.37);
+    scale: 1.04;
+  }
+
+
+  /* svg box border animatio */
+  .svg-glass {
+    background-color: #03091D;
+    backdrop-filter: blur(4px);
+    /* -webkit-backdrop-filter: blur(4px); */
+    transition: all 500ms ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  .svg-glass:hover {
+    box-shadow: 0 2px 12px 0 rgba(129, 131, 152, 0.37);
+    scale: 1.04;
+  }
+
+
+  /* features svg styles  */
+  .six-line-svg {
+    position: relative;
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 700px; */
+  }
+  
+  .image-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transition: all 1s ease;
+  }
+  
+  .image-end {
+    position: absolute;
+    transition: all 1s ease;
+    transition-delay: 700ms;
+}
+  
+  .image1 {
+    top: calc(50% - 150px);
+    left: calc(50% - 220px);
+    transform: translate(-50%, -50%);
+  }
+  
+  .image2 {
+    top: calc(50% -  150px);
+    left: calc(50% + 220px);
+    transform: translate(-50%, -50%);
+  }
+  
+  .image3 {
+    top: 50%;
+    left: calc(50% + 220px);
+    transform: translate(-50%, -50%);
+  }
+  
+  .image4 {
+    top: calc(50% + 150px);
+    left: calc(50% + 220px);
+    transform: translate(-50%, -50%);
+  }
+  
+  .image5 {
+    top: 50%;
+    left: calc(50% - 220px);
+    transform: translate(-50%, -50%);
+  }
+  
+  .image6 {
+    top: calc(50% + 150px);
+    left: calc(50% - 220px);
+    transform: translate(-50%, -50%);
+  }
+  .line {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    transition: stroke-dasharray 3s ease-in-out, stroke-dashoffset 3s ease-in-out;
+  }
+  
+  /* .six-line-svg:hover .line {
+    stroke-dasharray: 1000, 0;
+    stroke-dashoffset: 1000;
+    transition: stroke-dasharray 1s ease-in-out, stroke-dashoffset 1s ease-in-out;
+  } */
+  .line-animation  .line{
+    stroke-dasharray: 1000, 0;
+    stroke-dashoffset: 1000;
+    transition: stroke-dasharray 2s ease-in-out, stroke-dashoffset 1s ease-in-out ;
+  }
+  /* .line-animation .image-end {
+    box-shadow: 0 2px 10px 0 rgba(255, 255, 255, 0.582);
+  }
+
+  .line-animation .image-center{
+    box-shadow: 0 2px 12px 0 white;
+  } */
+  .line-animation .image-end {
+    /* box-shadow: 0 2px 10px 0 rgba(255, 255, 255, 0.582); */
+    transition: box-shadow 2.5s ease-in-out;
+  }
+  div[data-bg-color] {
+    /* background-color: var(--bg-color); */
+    box-shadow: 0 2px 10px 0 var(--bg-color);
+  }
+  
+  div[data-bg-color][data-bg-color=""] {
+    background-color: transparent;
+    
+  }
+  .line-animation .image-center {
+    box-shadow: 0 2px 12px 0 var(--bg-color);
+    transition: box-shadow 2.5s ease-in-out; /* Adjust the duration and timing function as needed */
+  }
+  
+  /* Optional: Adding hover effects to demonstrate the transition */
+  .line-animation .image-end:hover {
+    box-shadow: 0 4px 20px 0 var(--bg-color);
+  }
+  
+  .line-animation .image-center:hover {
+    box-shadow: 0 4px 24px 0 white;
+  }
+  .six-line-svg:hover .image-end {
+    box-shadow: 0 2px 10px 0 var(--bg-color);
+  }
+
+  .six-line-svg:hover .image-center{
+    box-shadow: 0 2px 12px 0 var(--bg-color);
+  }
+/* running stroke  */
+@keyframes dash-first {
+  from {
+    stroke-dashoffset: 0; 
+  }
+  to {
+    stroke-dashoffset: 177;
+  }
+}
+
+.running-animated-path {
+  stroke-dasharray: 10 177; 
+  animation: dash-first 2s linear infinite; 
+}
+
+@keyframes dash-short {
+  from {
+    stroke-dashoffset: 0; 
+  }
+  to {
+    stroke-dashoffset: 125;
+  }
+}
+
+.running-animated-path-short {
+  stroke-dasharray: 10 125; 
+  animation: dash-short 2s linear infinite; 
+}

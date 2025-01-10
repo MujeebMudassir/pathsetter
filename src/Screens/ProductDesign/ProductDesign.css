@@ -1,0 +1,178 @@
+.cube-container {
+  perspective: 1000px;
+  overflow: hidden;
+  /* background-color: antiquewhite; */
+  width: 250px; /* Width of the cube container */
+  height: 60px; /* Height of the cube container */
+  margin: 0 auto; /* Center the cube horizontally */
+  display: inline-block; /* Ensure the container is inline-block */
+  margin-bottom: -15px;
+}
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg); /* Start with initial X rotation */
+  animation: rotateCube 6s infinite ease-in-out;
+}
+
+.cube-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #8727C2;
+  align-items: center;
+  font-size: 45px;
+  backface-visibility: hidden;
+}
+
+/* Position each face of the cube */
+.front  { transform: rotateX(0deg) translateZ(100px); }
+.back   { transform: rotateX(180deg) translateZ(100px); }
+.top    { transform: rotateX(90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+/* Animation for rotating the cube */
+@keyframes rotateCube {
+  0% {
+    transform: rotateX(0deg);
+  }
+  25% {
+    transform: rotateX(90deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  75% {
+    transform: rotateX(270deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+@media (max-width: 768px) {
+
+  .cube-face{
+    font-size: 30px;
+  }
+}
+
+/* Media query for very small screens (like small phones) */
+@media (max-width: 400px) {
+
+  .cube-face{
+    font-size: 30px;
+  }
+}
+.image-animation {
+  translate: none;
+  rotate: none;
+  scale: none;
+  opacity: 1;
+  transition: none;
+}
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit; /* To overlay the background color */
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.image-wrapper img {
+  position: relative;
+  z-index: 1;
+}
+
+.product-bg-gradient:hover{
+  background: rgb(110,6,109);
+  background: -moz-linear-gradient(328deg, rgba(110,6,109,0) 19%, rgba(0,25,55,1) 100%);
+  background: -webkit-linear-gradient(328deg, rgba(110,6,109,0) 19%, rgba(0,25,55,1) 100%);
+  background: linear-gradient(328deg, rgba(110,6,109,0) 19%, rgba(0,25,55,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6e066d",endColorstr="#001937",GradientType=1);
+}
+
+
+.outer-fancy-prod {
+  --offset: 3px;
+  /* background: rgb(55, 21, 90); */
+  border-radius: 10px;
+  position: relative;
+  /* height: 75px; */
+  /* width: 400px; */
+  max-width: 100%;
+  padding: 2px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+/* Conic gradient */
+.outer-fancy-prod::before {
+  content: "";
+  /* background: conic-gradient(transparent 330deg, white, transparent); */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 20, 147, 1) 0%,
+    rgba(255, 20, 147, 1) 0%,
+    rgb(0, 0, 201) 100%
+  );
+  z-index: -30;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: outer-rotate 4s linear infinite;
+  animation-delay:1s ;
+  opacity: 0;
+}
+
+/* Overlay */
+.outer-fancy-prod::after {
+  content: "";
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  z-index: -40;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+.outer-fancy-prod > div {
+  background-color: #03091d;
+}
+
+@keyframes outer-rotate {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+
+@media screen and  (max-width: 768px) {
+  .outer-fancy-prod::before{
+    width: 350%;
+  }
+}
+.bg-gradient:hover{
+  background: rgb(63,251,236); 
+  background: radial-gradient(circle, rgba(63,251,236,1) 0%, rgba(82,70,252,1) 100%);
+}

@@ -1,0 +1,84 @@
+/* outer fancy  */
+.outer-fancy-product {
+  --offset: 3px;
+  /* background: rgb(55, 21, 90); */
+  border-radius: 10px;
+  position: relative;
+  /* height: 75px; */
+  /* width: 400px; */
+  max-width: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+/* Conic gradient */
+.outer-fancy-product::before {
+  content: "";
+  /* background: linear-gradient(180deg, rgba(49, 91, 230, 0) 0%, rgba(49, 91, 230, 0.697917) 9%, rgba(49, 91, 230, 0.760417) 50%, rgba(49, 91, 230, 0.760417) 66.6667%, rgba(49, 91, 230, 0) 100%); */
+  background: conic-gradient(transparent 330deg, var(--dynamic-color, white), transparent);
+  /* background: linear-gradient(180deg, rgba(126, 34, 206, 0) 0%, rgba(126, 34, 206, 0.697917) 9%, rgba(126, 34, 206, 0.760417) 50%, rgba(126, 34, 206, 0.760417) 66.6667%, rgba(126, 34, 206, 0) 100%); */
+  /* background: linear-gradient(180deg, rgba(255, 20, 147, 1) 0%, rgba(255, 20, 147, 1) 50%, rgba(0, 0, 255, 1) 50%, rgba(0, 0, 255, 1) 100%); */
+  /* background: linear-gradient(
+    180deg,
+    rgba(255, 20, 147, 1) 0%,
+    rgba(255, 20, 147, 1) 0%,
+    rgb(0, 0, 201) 100%
+  ); */
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  /* width: 200%; */
+  animation: outer-rotate-product 4s linear infinite;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+/* Overlay */
+.outer-fancy-product::after {
+  content: "";
+  background: inherit;
+  border-radius: inherit;
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+.outer-fancy-product > div {
+  /* background-color: #03091d; */
+}
+
+@keyframes outer-rotate-product {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+.prod-radial-gradient {
+  background: rgb(255, 255, 255);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(148, 187, 233, 0) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(148, 187, 233, 0) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(71, 9, 119, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#94bbe9",GradientType=1);
+}

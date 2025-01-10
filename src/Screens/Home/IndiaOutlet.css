@@ -1,0 +1,33 @@
+.hovereffect:hover{
+    background-color: rgb(126 34 206);
+    border-radius: 50px;
+   
+}
+.mapImg{
+      width: 250px;
+}
+.icon1{
+    width: 35px;
+    background: white;
+    border-radius: 20px;
+    padding: 1px;
+    color: black;
+    height: 35px;
+}
+.icon2{
+    width: 35px;
+    height: 32px;
+    border-radius: 20px;
+}
+.icon4{
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+    color: black;
+}
+.pathicon{
+    width: 40%;
+}

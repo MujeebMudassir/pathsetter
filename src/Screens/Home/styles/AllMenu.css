@@ -1,0 +1,23 @@
+@media screen and (max-width: 860px) {
+    .menuBar {
+        display: block;
+    }
+    .menuBarXL {
+        display: none;
+    }
+    .mainSection {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .menuBar {
+        display: none;
+    }
+    .menuBarXL {
+        display: block;
+    }
+    .mainSection {
+        grid-template-columns: 3fr 9fr;
+    }
+}
