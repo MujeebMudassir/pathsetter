@@ -39,16 +39,16 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/pathsetter" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<ProductsMain />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/DataDynamo" element={<ProductDesign />} />
-        <Route path="/MarketGenie" element={<ProductDesignInfo />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-        <Route path="/contactus" element={<ContactUs></ContactUs>} />
-        <Route path="/popup" element={<Popup />} />
-        <Route path="/thank-you" element={<ThankYouPage />} />
-        <Route path="/AllMenu" element={<AllMenu />} />
+        <Route path="/pathsetter/about" element={<About />} />
+        <Route path="/pathsetter/products" element={<ProductsMain />} />
+        <Route path="/pathsetter/faq" element={<FAQ />} />
+        <Route path="/pathsetter/DataDynamo" element={<ProductDesign />} />
+        <Route path="/pathsetter/MarketGenie" element={<ProductDesignInfo />} />
+        <Route path="/pathsetter/aboutus" element={<AboutUs />} />
+        <Route path="/pathsetter/contactus" element={<ContactUs></ContactUs>} />
+        <Route path="/pathsetter/popup" element={<Popup />} />
+        <Route path="/pathsetter/thank-you" element={<ThankYouPage />} />
+        <Route path="/pathsetter/AllMenu" element={<AllMenu />} />
       </Routes>
       <div className="fixed hidden lg:block right-5 top-5 z-[999]">
 
