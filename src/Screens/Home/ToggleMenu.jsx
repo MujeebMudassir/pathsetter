@@ -29,7 +29,7 @@ const ToggleMenu = () => {
         <div className="p-4 pt-20">
           <div className="flex flex-col">
             <Link
-              to={"/"}
+              to={"/pathsetter"}
               onClick={() => {
                 scrollTo(0, 0);
                 setIsOpen(false);

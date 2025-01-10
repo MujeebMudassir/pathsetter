@@ -27,7 +27,7 @@ const FixedNavbar = () => {
       } transition z-30 top-2 max-lg:right-2`}
     >
       <Link
-        to={"/"}
+        to={"/pathsetter"}
         onClick={() => scrollTo(0, 0)}
         className={`headerButton pl-10 hover:text-white transition-all ${location==="/" && "text-white"}`}
       >
