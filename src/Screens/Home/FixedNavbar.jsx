@@ -27,7 +27,7 @@ const FixedNavbar = () => {
       } transition z-30 top-2 max-lg:right-2`}
     >
       <Link
-        to={"/pathsetter"}
+        to={"/"}
         onClick={() => scrollTo(0, 0)}
         className={`headerButton pl-10 hover:text-white transition-all ${location==="/" && "text-white"}`}
       >
@@ -50,7 +50,7 @@ const FixedNavbar = () => {
           <ul className="absolute left-0 mt-2 min-w-[120px] bg-black text-[#919191] rounded-md shadow-lg">
             <li>
               <Link
-                to={"/pathsetter/DataDynamo"}
+                to={"/DataDynamo"}
                 onClick={() => window.scrollTo(0, 0)}
                 className={`block px-4 py-2 hover:text-white text-nowrap ${location === "/DataDynamo" && "text-white"}`}
               >
@@ -59,7 +59,7 @@ const FixedNavbar = () => {
             </li>
             <li>
               <Link
-                to={"/pathsetter/MarketGenie"}
+                to={"/MarketGenie"}
                 onClick={() => window.scrollTo(0, 0)}
                 className={`block px-4 py-2 hover:text-white text-nowrap ${location === "/MarketGenie" && "text-white"}`}
               >
@@ -70,14 +70,14 @@ const FixedNavbar = () => {
         )}
       </div>
       <Link
-        to={"/pathsetter/contactus"}
+        to={"/contactus"}
         onClick={() => scrollTo(0, 0)}
         className={`headerButton hover:text-white transition-all ${location==="/contactus" && "text-white"}`}
       >
         GET A DEMO
       </Link>
       <Link
-        to={"/pathsetter/aboutus"}
+        to={"/aboutus"}
         onClick={() => scrollTo(0, 0)}
         className={`headerButton hover:text-white transition-all ${location==="/aboutus" && "text-white"}`}
       >
@@ -86,7 +86,7 @@ const FixedNavbar = () => {
      
 
       <Link
-        to={"/pathsetter/faq"}
+        to={"/faq"}
         onClick={() => scrollTo(0, 0)}
         className={` hover:text-white transition-all ${location==="/faq" && "text-white"}`}
       >
