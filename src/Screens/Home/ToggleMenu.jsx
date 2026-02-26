@@ -39,7 +39,7 @@ const ToggleMenu = () => {
               Home
             </Link>
             <Link
-              to={"/pathsetter/contactus"}
+              to={"/contactus"}
               onClick={() => {
                 scrollTo(0, 0);
                 setIsOpen(false);
@@ -49,7 +49,7 @@ const ToggleMenu = () => {
               GET A DEMO
             </Link>
             <Link
-              to={"/pathsetter/DataDynamo"}
+              to={"/DataDynamo"}
               onClick={() => {
                 scrollTo(0, 0);
                 setIsOpen(false);
@@ -59,7 +59,7 @@ const ToggleMenu = () => {
               Data Dynamo
             </Link>
             <Link
-              to={"/pathsetter/MarketGenie"}
+              to={"/MarketGenie"}
               onClick={() => {
                 scrollTo(0, 0);
                 setIsOpen(false);
@@ -69,7 +69,7 @@ const ToggleMenu = () => {
               MarketGenie
             </Link>
             <Link
-              to={"/pathsetter/aboutus"}
+              to={"/aboutus"}
               onClick={() => {
                 scrollTo(0, 0);
                 setIsOpen(false);
@@ -79,7 +79,7 @@ const ToggleMenu = () => {
               About Us
             </Link>
             <Link
-              to={"/pathsetter/faq"}
+              to={"/faq"}
               onClick={() => {
                 scrollTo(0, 0);
                 setIsOpen(false);
